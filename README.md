@@ -34,7 +34,9 @@ Se logró obtener la rasterización de un triángulo generado aleatoriamente hac
 ### Rendering
 
 A continuación se presenta la rasterización de un triángulo haciendo uso de distintos tamaños de grilla:
+
 ![alt text](./images/render.gif)
+
 En donde se pueden apreciar mayor definición del triángulo a mayor cantidad de "píxeles" generados.
 
 ### Anti-aliasing
@@ -49,7 +51,7 @@ En ese sentido, tras realizar algunas operaciones matemáticas y aumentar la par
 
 ### Shading
 La representación de este mecanismo dentro de la escena se basó en la interpolación de los colores de acuerdo a su posición dentro del triángulo y su cercanía a los vértices. En este caso, se utilizaron los colores RGB ( Red, Green, Blue) para visualizar de mejor manera el contenido de color.
-Se hizo la conversión del espacio cartesiano a baricéntrico con el propósito de obtener los coeficientes \(\alpha\), \(\beta\), \(\gamma\) los cuales fueron utilizados para determinar el rango de color apropiado para pintar el "píxeles".
+Se hizo la conversión del espacio cartesiano a baricéntrico con el propósito de obtener los coeficientes *alpha*, *beta*, *gamma* los cuales fueron utilizados para determinar el rango de color apropiado para pintar el "píxeles".
 
 ## Dificultades
 Las dificultades presentadas en este proceso se fundamentaron en el entendimiento y compresión particular de los límites de rasterización, pues la ubicación en cada uno de los "píxeles" impedían el avance y desarrollo. Adicionalmente, el descubrimiento e implementación de las técnicas conllevaron problemas de diseño y codificación por la valoración específica de los "píxeles" y su ubicación dentro del triángulo.
@@ -57,7 +59,7 @@ Las dificultades presentadas en este proceso se fundamentaron en el entendimient
 ## Funcionalidades Adicionales
 
 | Nombre                     | Tecla |
-|------------------------------------|
+|----------------------------|-------|
 | Posfiltrado, Anti-aliasing | 'a'   |
 | SSAA, Anti-aliasing        | 'b'   |
 | Aumento resolución, SSAA   | 's'   |
