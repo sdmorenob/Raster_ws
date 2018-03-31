@@ -43,7 +43,9 @@ En donde se pueden apreciar mayor definición del triángulo a mayor cantidad de
 Las técnicas usadas para la implementación del anti-aliasing fueron las siguientes:
 #### Posfiltrado:
 Consiste en aumentar la frecuencia de muestreo utilizada para el submuestreo. En este caso se hizo uso de una escena *offscreen* en la cual se dividió cada uno de los "píxeles" en 100 sub-píxeles y se determinó la proporción del "píxel" que se encuentra dentro del triángulo para posteriormente mostrarlo en la escena con un brillo proporcional a la coordenadas baricéntricas.
+
 ![alt text](./images/anti-aliasing.gif)
+
 #### SuperSampling Anti-Aliasing (SSAA):
 A partir de la implementación del SuperSampling Anti-Aliasing (técnica espacial que reduce el efecto de aliasing), permite a grandes rasgos suavizar los bordes dentados y pixelados de una escena renderizada particular. En este caso, se trató de reducir el defecto a partir del mejoramiento de la calidad de la imagen mediante la reducción del espaciado y procesado en cada uno de los "píxeles". Esto representó un consumo elevado de recursos debido al procesamiento y cálculo de varios valores.
 
